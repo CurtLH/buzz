@@ -1,7 +1,5 @@
-#! /usr/bin/env python
-
-import requests
 import click
+import requests
 from pprint import pprint
 
 def build_request(airport):
@@ -57,7 +55,3 @@ def cli(airport, temp_only):
 
     else:
         pprint(r)
-
-
-if __name__ == '__main__':
-    cli()
