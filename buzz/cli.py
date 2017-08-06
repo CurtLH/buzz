@@ -43,7 +43,7 @@ def parse_temp(r, unit='f'):
 @click.option('--temp_only', is_flag=True)
 def cli(airport, temp_only):
 
-    """queries FAA services for airport information"""
+    """queries FAA services API and returns airport information"""
 
     # get airport informaiton
     r = get_request(airport)
